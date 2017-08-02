@@ -2,10 +2,6 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use backend\widgets\BgSuccessMsg;
-
-$this->params['activeMenu'] = 'bgSet';
-$this->params['activeSubMenu'] = '/bguser/list';
-
 if ($model->id) {
     $this->title = '编辑管理员';
 } else {

@@ -1,9 +1,6 @@
 <?php
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
-
-$this->params['activeMenu'] = 'bgSet';
-$this->params['activeSubMenu'] = '';
 ?>
 
 <?php $form = ActiveForm::begin(

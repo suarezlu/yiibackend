@@ -1,8 +1,5 @@
 <?php
 use backend\widgets\BgSuccessMsg;
-
-$this->params['activeMenu'] = 'bgSet';
-$this->params['activeSubMenu'] = '';
 ?>
 <ul class="nav nav-tabs">
     <li role="presentation" class="active"><a href="#">管理员列表</a></li>

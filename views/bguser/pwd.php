@@ -2,9 +2,6 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use backend\widgets\BgSuccessMsg;
-
-$this->params['activeMenu'] = 'bgSet';
-$this->params['activeSubMenu'] = '';
 ?>
 <h3>修改密码</h3>
 <?php

@@ -1,7 +1,3 @@
-<?php
-$this->params['activeMenu'] = 'bgSet';
-$this->params['activeSubMenu'] = '/bguser/role';
-?>
 <h2>角色权限设置（<?php echo $_GET['name']; ?>）</h2>
 <form id="per-form" method="post">
     <input name="_csrf-backend" type="hidden" id="_csrf" value="<?= Yii::$app->request->csrfToken ?>">

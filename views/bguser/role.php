@@ -1,8 +1,3 @@
-<?php
-$this->params['activeMenu'] = 'bgSet';
-$this->params['activeSubMenu'] = '';
-?>
-
 <ul class="nav nav-tabs">
     <li role="presentation" class="active"><a href="#">角色管理</a></li>
     <li role="presentation"><a href="/bguser/roleae">添加角色</a></li>

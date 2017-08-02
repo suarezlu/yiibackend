@@ -12,6 +12,7 @@ use Yii;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use backend\models\CategoryAoeForm;
 
 class CategoryController extends Controller
 {
@@ -31,7 +32,7 @@ class CategoryController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['list'],
+                        'actions' => ['list', 'aoe'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -50,5 +51,20 @@ class CategoryController extends Controller
                 'class' => 'yii\web\ErrorAction',
             ],
         ];
+    }
+
+    public function actionList()
+    {
+
+        return $this->render('list');
+    }
+
+    public function actionAoe()
+    {
+        $model = new CategoryAoeForm();
+
+        return $this->render('aoe', [
+            'model' => $model
+        ]);
     }
 }
