@@ -1,8 +1,10 @@
+<?php $this->title = '角色管理'; ?>
 <ul class="nav nav-tabs">
-    <li role="presentation" class="active"><a href="#">角色管理</a></li>
+    <li role="presentation" class="active"><a href="javascript:;">角色管理</a></li>
     <li role="presentation"><a href="/bguser/roleae">添加角色</a></li>
 </ul>
 
+<h3 class="text-center"><?= $this->title ?></h3>
 <table class="table table-hover">
     <thead>
     <tr><th>#</th><th>角色</th><th>描述</th><th></th></tr>

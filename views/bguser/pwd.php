@@ -2,8 +2,10 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use backend\widgets\BgSuccessMsg;
+
+$this->title = '修改密码';
 ?>
-<h3>修改密码</h3>
+<h3 class="text-center">修改密码</h3>
 <?php
     $form = ActiveForm::begin([
         'id' => 'user-pwd-form',

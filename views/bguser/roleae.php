@@ -2,14 +2,20 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use backend\widgets\BgSuccessMsg;
+$this->title = $model->readOnly?'编辑角色':'添加角色';
 ?>
-
 
 <ul class="nav nav-tabs">
     <li role="presentation"><a href="/bguser/role">角色管理</a></li>
-    <li role="presentation" class="active"><a href="javascript:;"><?= $model->readOnly?'编辑角色':'添加角色' ?></a></li>
+    <?php if ($model->readOnly) { ?>
+        <li role="presentation"><a href="/bguser/roleae">添加角色</a></li>
+        <li role="presentation" class="active"><a href="javascript:;">编辑角色</a></li>
+    <?php } else { ?>
+        <li role="presentation" class="active"><a href="javascript:;">添加角色</a></li>
+    <?php } ?>
 </ul>
 
+<h3 class="text-center"><?= $this->title ?></h3>
 
 <?php $form = ActiveForm::begin([
     'id' => 'role-save-form',

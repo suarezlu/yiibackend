@@ -1,14 +1,16 @@
 <?php
 use backend\widgets\BgSuccessMsg;
+$this->title = '管理员列表';
 ?>
 <ul class="nav nav-tabs">
     <li role="presentation" class="active"><a href="#">管理员列表</a></li>
     <li role="presentation"><a href="/bguser/user">添加管理员</a></li>
 </ul>
 
+<h3 class="text-center"><?= $this->title ?></h3>
 <table class="table table-hover">
     <thead>
-    <tr><th>#</th><th>用户名</th><th>email</th><th>电话</th><th>option</th></tr>
+    <tr><th>#</th><th>用户名</th><th>email</th><th>电话</th><th></th></tr>
     </thead>
     <tbody>
     <?php foreach($list as $i=>$item) { ?>

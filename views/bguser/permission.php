@@ -1,4 +1,11 @@
-<h2>角色权限设置（<?php echo $_GET['name']; ?>）</h2>
+<?php $this->title = '权限设置'; ?>
+<ul class="nav nav-tabs">
+    <li role="presentation"><a href="/bguser/role">角色管理</a></li>
+    <li role="presentation"><a href="/bguser/roleae">添加角色</a></li>
+    <li role="presentation" class="active"><a href="javascript:;">权限设置</a></li>
+</ul>
+
+<h3 class="text-center"><?php echo $this->title . '【' . $_GET['name'] . '】'; ?></h3>
 <form id="per-form" method="post">
     <input name="_csrf-backend" type="hidden" id="_csrf" value="<?= Yii::$app->request->csrfToken ?>">
         <?php foreach ($permissionList as $item) { ?>
@@ -9,7 +16,7 @@
             </div>
         <?php } ?>
     <button type="submit" class="btn btn-primary">保存</button>
-    <a type="button" onclick="javascript:history.back(-1);" class="btn btn-primary">返回</a>
+    <a type="button" href="/bguser/role" class="btn btn-primary">返回</a>
 </form>
 
 <script type="text/javascript">

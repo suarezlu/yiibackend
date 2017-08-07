@@ -14,7 +14,9 @@ class AppAsset extends AssetBundle
     public $css = [
         'css/site.css',
         'bootstrap-fileinput/css/fileinput.min.css',
-        'ueditor/themes/default/css/umeditor.css'
+        'ueditor/themes/default/css/umeditor.css',
+        'jquery-treetable/jquery.treetable.css',
+        'jquery-treetable/jquery.treetable.theme.backend.css'
     ];
     public $js = [
         'bootstrap-fileinput/js/fileinput.min.js',
@@ -23,6 +25,7 @@ class AppAsset extends AssetBundle
         'ueditor/umeditor.min.js',
         'ueditor/lang/zh-cn/zh-cn.js',
         'ueditor/umeditor.config.js',
+        'jquery-treetable/jquery.treetable.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',
